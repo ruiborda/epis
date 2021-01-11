@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "carousels",
+  "info": {
+    "name": "Carousel"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "figure": {
+      "type": "dynamiczone",
+      "components": [
+        "multimedia.figure"
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_menu_enlaces",
+  "info": {
+    "name": "enlace",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

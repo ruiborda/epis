@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paginas",
+  "info": {
+    "name": "pagina",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "h1": {
+      "type": "string"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "h1"
+    },
+    "descripcion": {
+      "type": "string",
+      "maxLength": 160,
+      "default": "160 caracteres como máximo incluyendo espacios"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

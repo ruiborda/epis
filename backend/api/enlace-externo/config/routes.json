@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/enlace-externos",
+      "handler": "enlace-externo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enlace-externos/count",
+      "handler": "enlace-externo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enlace-externos/:id",
+      "handler": "enlace-externo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/enlace-externos",
+      "handler": "enlace-externo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/enlace-externos/:id",
+      "handler": "enlace-externo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/enlace-externos/:id",
+      "handler": "enlace-externo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

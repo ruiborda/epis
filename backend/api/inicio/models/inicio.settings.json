@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "inicios",
+  "info": {
+    "name": "Inicio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "h1": {
+      "type": "string",
+      "default": "título"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "marca": {
+      "type": "string",
+      "default": "ejemplo ONU"
+    },
+    "metaDescripcion": {
+      "type": "string",
+      "default": "Lo ideal es que la meta descripción contenga entre 70 y 160 caracteres incluyendo espacios",
+      "maxLength": 160
+    }
+  }
+}

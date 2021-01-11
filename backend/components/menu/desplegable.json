@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_menu_desplegables",
+  "info": {
+    "name": "desplegable",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "pagina": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.pagina"
+    }
+  }
+}

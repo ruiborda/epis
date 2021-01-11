@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enlace_externos",
+  "info": {
+    "name": "enlace-externo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

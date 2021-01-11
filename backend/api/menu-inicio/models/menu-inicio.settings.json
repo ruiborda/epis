@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "menu_inicios",
+  "info": {
+    "name": "menu-inicio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "menu": {
+      "type": "dynamiczone",
+      "components": [
+        "menu.desplegable",
+        "menu.enlace-externo",
+        "menu.enlace"
+      ]
+    },
+    "marca": {
+      "type": "string"
+    }
+  }
+}

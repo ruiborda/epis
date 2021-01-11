@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_menu_enlace_externos",
+  "info": {
+    "name": "enlace-externo",
+    "icon": "external-link-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

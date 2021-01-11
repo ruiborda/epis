@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_menu_paginas",
+  "info": {
+    "name": "pagina",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "pagina": {
+      "model": "pagina"
+    }
+  }
+}
