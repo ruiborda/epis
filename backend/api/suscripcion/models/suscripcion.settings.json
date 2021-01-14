@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suscripcions",
+  "info": {
+    "name": "suscripcion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "correo": {
+      "type": "email"
+    }
+  }
+}

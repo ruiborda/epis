@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_inicios",
+  "info": {
+    "name": "footer-inicio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "encuentranos": {
+      "type": "string"
+    },
+    "llamanos": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.enlace-externo"
+    },
+    "enlaces_utiles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.enlace-externo"
+    }
+  }
+}
