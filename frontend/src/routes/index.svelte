@@ -10,6 +10,7 @@
 
 <svelte:head>
     <title>EPIS</title>
+    <meta name="Description" content="160 caracteres Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid at cumque, ex odio officia porro quas quibusdam soluta voluptatem. Accusantium">
 </svelte:head>
 
 <Carousel />

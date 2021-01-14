@@ -2,25 +2,12 @@
     import {API_URL} from "../../config";
 
     export async function preload({params}) {
-        let existe = false;
-        const res = await this.fetch(`${API_URL}/menu-inicio`);
+        const res = await this.fetch(`${API_URL}/articles?_where[url]=${params.url}`);
         const data = await res.json();
-        data.menu.forEach((element) => {
-            if (element.url === params.menu) {
-                existe = true;
-            }
-        });
-        if (existe) {
-            const res = await this.fetch(`${API_URL}/paginas?_where[url]=${params.url}`);
-            const data = await res.json();
-            if (data.length > 0) {
-                return {post: data[0]};
-            } else {
-                this.error(404, "La dirección solicitada no existe:" + params.url);
-            }
-            return {post: data};
+        if (data.length > 0) {
+            return {post: data[0]};
         } else {
-            this.error(404, "La dirección raíz no existe:" + params.menu);
+            this.error(404, "La dirección solicitada no existe:" + params.url);
         }
     }
 </script>
@@ -37,7 +24,8 @@
 </style>
 
 <svelte:head>
-    <title>{post.h1}</title>
+    <title>{post.title}</title>
+    <meta name="Description" content="{post.description}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous">
     </script>
@@ -48,7 +36,7 @@
         <div class="col">
             <main class="p-md-5">
                 <article class="blog-post px-md-5">
-                    <h1 class="py-5">{post.h1}</h1>
+                    <h1 class="py-5">{post.title}</h1>
                     <figure class="figure">
                         <img src="{API_URL}{post.image.url}" class="figure-img img-fluid rounded" alt="{post.image.alternativeText}">
                         <figcaption class="figure-caption">{post.image.caption}</figcaption>

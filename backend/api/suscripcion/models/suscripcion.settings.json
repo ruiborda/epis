@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "suscripcions",
   "info": {
-    "name": "suscripcion"
+    "name": "suscripcion",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,8 @@
   },
   "attributes": {
     "correo": {
-      "type": "email"
+      "type": "email",
+      "unique": true
     }
   }
 }

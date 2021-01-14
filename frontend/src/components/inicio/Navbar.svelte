@@ -15,6 +15,7 @@
     } from 'sveltestrap/src';
     import {onMount} from "svelte";
     import axios from "axios";
+    import Search from "./Search.svelte";
 
     export let segment;
 
@@ -31,7 +32,6 @@
     onMount(async () => {
         const res = await axios.get(`${API_URL}/menu-inicio`);
         nav = res.data.menu;
-        console.log(nav);
         logoUrl = "http://localhost:1337" + res.data.logo.formats.thumbnail.url;
     });
 </script>
@@ -75,7 +75,7 @@
             {#each nav as menu}
                 {#if menu.__component === "menu.enlace-externo"}
                     <NavItem>
-                        <NavLink href="{menu.url}" rel="external" target="_blank">{menu.descripcion}</NavLink>
+                        <NavLink href="{menu.url}" rel="noreferrer"  target="_blank">{menu.descripcion}</NavLink>
                     </NavItem>
                 {:else if menu.__component === "menu.desplegable"}
                     <UncontrolledDropdown nav inNavbar>
@@ -90,7 +90,7 @@
                     </UncontrolledDropdown>
                 {:else if menu.__component === "menu.enlace"}
                     <NavItem>
-                        <NavLink href="{menu.url}" rel="prefetch">{menu.descripcion}</NavLink>
+                        <NavLink href="{menu.url}" rel="prefetch" class="{segment === menu.url ? 'text-primary active' : ''}">{menu.descripcion}</NavLink>
                     </NavItem>
                 {/if}
             {:else}
@@ -99,5 +99,6 @@
                 </NavItem>
             {/each}
         </Nav>
+        <Search />
     </Collapse>
 </Navbar>
