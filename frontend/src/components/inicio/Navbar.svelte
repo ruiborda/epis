@@ -28,10 +28,13 @@
     let nav = [];
     let error = null;
     let logoUrl = null;
-
+    let marca = null;
+    
     onMount(async () => {
         const res = await axios.get(`${API_URL}/menu-inicio`);
         nav = res.data.menu;
+        marca = res.data.marca;
+        console.log(res.data);
         logoUrl = "http://localhost:1337" + res.data.logo.formats.thumbnail.url;
     });
 </script>
@@ -67,7 +70,7 @@
         {:else}
             <img src="{logoUrl}" alt="logo unajma" width="24" height="30" class="d-inline-block align-top">
         {/if}
-        EPIS
+        {marca === null? "Cargando...":marca }
     </NavbarBrand>
     <NavbarToggler on:click={() => (isOpen = !isOpen)} />
     <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
