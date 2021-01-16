@@ -18,11 +18,11 @@ function LeftMenuFooter({ version }) {
     <Wrapper>
       <div className="poweredBy">
         <a key="website" href="#" target="_blank" rel="noopener noreferrer">
-          WispController
+          EPIS
         </a>
         &nbsp;
         <a
-          href={`https://github.com/ruiborda/core-sistema-de-pagos/tree/v1.0.1`}
+          href={`https://github.com/ruiborda/epis`}
           key="github"
           target="_blank"
           rel="noopener noreferrer"
