@@ -34,6 +34,7 @@
         const res = await axios.get(`${API_URL}/menu-inicio`);
         nav = res.data.menu;
         marca = res.data.marca;
+        console.log(res.data.menu)
         logoUrl = "http://localhost:1337" + res.data.logo.formats.thumbnail.url;
     });
 </script>
