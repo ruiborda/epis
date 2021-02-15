@@ -8,7 +8,6 @@ import Footer from "../../components/inicio/Footer.svelte";
     <meta name="Description" content="160 caracteres Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid at cumque, ex odio officia porro quas quibusdam soluta voluptatem. Accusantium">
 </svelte:head>
 
-
 <div class="cotainer">
     <div class="row">
         <div class="col">

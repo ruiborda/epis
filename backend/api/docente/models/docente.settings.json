@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docente",
+  "info": {
+    "name": "docente"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "clase": {
+      "type": "enumeration",
+      "enum": [
+        "NOMBRADO",
+        "CONTRATADO"
+      ]
+    }
+  }
+}

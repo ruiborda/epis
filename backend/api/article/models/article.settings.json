@@ -23,8 +23,11 @@
     "image": {
       "model": "file",
       "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "category": {
       "model": "category",
