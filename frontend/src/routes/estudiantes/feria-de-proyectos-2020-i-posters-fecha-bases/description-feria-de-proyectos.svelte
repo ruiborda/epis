@@ -20,10 +20,10 @@ import Footer from "../../../components/inicio/Footer.svelte";
                 </p>
 
                     <ul>
-                        <li>FanPage</li>
-                        <li>Formulario de inscripción</li>
-                        <li>Diapositivas</li>
-                        <li>Bases</li>
+                        <li style="list-style:none"> <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/EpisCeidis" target="_blank">FanPage</a></li>
+                        <li style="list-style:none"> <i class="far fa-file-alt"></i> Formulario de inscripción</li>
+                        <li style="list-style:none"> <i class="far fa-file-powerpoint"></i> Diapositivas</li>
+                        <li style="list-style:none"> <i class="fas fa-barcode"></i> Bases</li>
                     </ul>
                     <img src="https://scontent-lim1-1.xx.fbcdn.net/v/t1.0-9/118699621_145128367283886_1246915995938581996_n.jpg?_nc_cat=107&ccb=3&_nc_sid=dd9801&_nc_ohc=4ExlydMj4IwAX_tlbWv&_nc_ht=scontent-lim1-1.xx&oh=8bd6ad74cc2115f9ad29d09ff156cf9e&oe=605F82CC" alt="" class="card-img-top">
             </div>

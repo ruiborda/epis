@@ -7,10 +7,9 @@
     <meta name="" content="" />
 </svelte:head>
 
-
+<br> <br>
 <div class="container">
     <div class="row">
-
         <div class="col-md-12">
             <h1 style="text-align:center">FERIA DE PROYECTOS - EPIS</h1>
         </div>
@@ -21,7 +20,7 @@
                 <div class="card-body">
                     <h5 class="card-title">2° Festival de innovación y proyectos tecnologícos</h5>
                     <p class="card-text">esto es un ejmplo de description</p>
-                    <a href="estudiantes/feria-de-proyectos-2020-i-posters-fecha-bases/description" class="btn btn-primary">Ver mas</a>
+                    <a href="estudiantes/feria-de-proyectos-2020-i-posters-fecha-bases/description-feria-de-proyectos" class="btn btn-primary">Ver mas</a>
                 </div>
             </div>
         </div>
@@ -32,7 +31,7 @@
                 <div class="card-body">
                     <h5 class="card-title">1° FESTIVAL Y CONCURSO VIRTUAL DE PROYECTOS</h5>
                     <p class="card-text">esto es un ejmplo de description</p>
-                    <a href="estudiantes/feria-de-proyectos-2020-i-posters-fecha-bases/description" class="btn btn-primary">Ver mas</a>
+                    <a href="estudiantes/feria-de-proyectos-2020-i-posters-fecha-bases/description-feria-de-proyectos" class="btn btn-primary">Ver mas</a>
                 </div>
             </div>
         </div>
